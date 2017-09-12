@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Callback</title>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // document is ready
+            $('#head').click(function(){
+                $(this).html("Hello jquery page")
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1 id="head">Hello Html page</h1>
+    <script>
+        var head = document.getElementById('head');
+        console.log(head);
+        // head.innerHTML = "Hello JS page"
+    </script>
+</body>
+</html>

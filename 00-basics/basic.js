@@ -1,4 +1,4 @@
-var sum = function(){}
+var sum = function(){} // Function
 
 var sum = function(){return 5+2;}
 

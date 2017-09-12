@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+
+//    simple function needs to be called
+    var myFunc = function(){
+        console.log('I am a simple function');
+    }
+
+
+
+//  immediate function, we add the open/close parentheses
+//  after the closing curly bracket and then wrap the
+//  entire function in parentheses
+
+    (function(){
+        console.log('hello, I am an immediate function');
+    })()
+
+
+
+
+//immediate function with parameters
+
+var myName = 'Arun';
+(function(thisName){
+    console.log( 'hello, my name is: ' + thisName );
+}(myName))
+
+
+
+
+
+
+
+(function () {
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday"];
+    var today = new Date();
+    var message = "Welcome, today is " + days[today.getDay()];
+    alert(message);     // => Welcome, today is Monday
+}());
+
+
+</script>
+</body>
+</html>
